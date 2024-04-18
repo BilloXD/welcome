@@ -151,7 +151,7 @@ module.exports = {
       if (!welcomeChannel || !(welcomeChannel instanceof TextChannel)) return;
 
       await welcomeChannel.send({ content: welcomeMessage, embeds: [embed] });
-      await member.send({ content: welcomeMessageDm, embeds: [embed] });
+    
     } catch (error) {
       console.error("Error sending welcome message:", error);
     }
