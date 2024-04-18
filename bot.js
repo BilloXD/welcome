@@ -92,8 +92,8 @@ client.on("guildMemberAdd", async (member) => {
       authorIcon,
     } = messageData;
 
-    const welcomeMessage = `*Welcome* ${member}! to ${member.guild.name}!*`;
-    const welcomeMessageDm = `💝 This message has been sent from** ${member.guild.name}!**`;
+   const welcomeMessage = `<a:welcome:1230458323237867530> **Welcome** **${member}** **to** **${member.guild.name}** <a:welcome:1230458323237867530>`;
+      const welcomeMessageDm = `<a:taj:859462735691382784>  **This message has been sent from** **${member.guild.name} by** **<@725620582942507065>**`;
     const embed = new EmbedBuilder()
       .setTitle(title)
       .setDescription(description)
