@@ -105,8 +105,7 @@ client.on("guildMemberAdd", async (member) => {
       .setAuthor({ name: authorName, iconURL: authorIcon, url: authorURL });
 
     await welcomeChannel.send({ content: welcomeMessage, embeds: [embed] });
-    await member.send({ content: welcomeMessageDm, embeds: [embed] });
-  } catch (error) {
+      } catch (error) {
     console.error("Error sending welcome message:", error);
   }
 });
